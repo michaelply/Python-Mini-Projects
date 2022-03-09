@@ -11,6 +11,8 @@ if playing.lower() == "y" or playing.lower() == "yes":
 else:
     print("I knew it!")
     quit()
+
+
 answer1 = input("Who has the most points per game this season?\n")
 if answer1.lower() == data.most_points_per_game_player.lower():
     print("Correct")

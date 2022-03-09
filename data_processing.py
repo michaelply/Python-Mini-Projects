@@ -104,22 +104,22 @@ def most_total_rebounds(basic_rebounds_stats):
 
 
 # Tests
-points = get_basic_points_data(basic_stats)
-pts = most_total_points(points)
-ppg = most_points_per_game(points)
-print(ppg)
-print(pts)
-
-assists = get_basic_assists_data(basic_stats)
-apg = most_assists_per_game(assists)
-ast = most_total_assists(assists)
-print(apg)
-print(ast)
-
-rebounds = get_basic_rebounds_data(basic_stats)
-rpg = most_rebounds_per_game(rebounds)
-reb = most_total_rebounds(rebounds)
-print(rpg)
-print(reb)
+# points = get_basic_points_data(basic_stats)
+# pts = most_total_points(points)
+# ppg = most_points_per_game(points)
+# print(ppg)
+# print(pts)
+#
+# assists = get_basic_assists_data(basic_stats)
+# apg = most_assists_per_game(assists)
+# ast = most_total_assists(assists)
+# print(apg)
+# print(ast)
+#
+# rebounds = get_basic_rebounds_data(basic_stats)
+# rpg = most_rebounds_per_game(rebounds)
+# reb = most_total_rebounds(rebounds)
+# print(rpg)
+# print(reb)
 
 
