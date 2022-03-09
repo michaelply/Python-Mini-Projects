@@ -9,6 +9,8 @@ TOTAL_GAMES = 82
 MINIMUM_PERCENTAGE = 0.7
 
 # QUESTIONS
+NUM_OF_QUESTIONS_IN_QUIZ = 3
+
 QUESTIONS = [
     "Who has the most points per game this season?",
     "Who has the most assists per game this season?",

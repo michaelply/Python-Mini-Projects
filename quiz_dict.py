@@ -13,7 +13,7 @@ def construct_quiz_dict(question_lists):
         question = question_lists[i]
         if question not in quiz_dict:
             answer = get_answer(question, standing, basic_stats, advanced_stats)
-            quiz_dict[question] = answer.lower()
+            quiz_dict[question] = answer
     return quiz_dict
 
 def get_answer(question, standing, basic_stats, advanced_stats):
