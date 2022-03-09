@@ -2,6 +2,11 @@ from basketball_reference_web_scraper import client
 from basketball_reference_web_scraper.data import OutputType
 import constants as CONSTANTS
 
+"""
+Documentations: (basketball_reference_web_scraper API)
+https://jaebradley.github.io/basketball_reference_web_scraper/
+"""
+
 # Get current nba season standing
 client.standings(
     season_end_year=CONSTANTS.CURRENT_SEASON,
