@@ -105,6 +105,15 @@ def most_win_shares(win_shares_stats):
     return win_shares_leader
 
 # 5. Who has the most turnovers?
+def get_turnover_data(basic_stats):
+    turnovers = basic_stats["turnovers"]
+    return turnovers
+
+def most_turnover_player(turnover_stats):
+    turnover_ranking = turnover_stats.sort_values(ascending=False)
+    print(turnover_ranking)
+    turnover_leader = turnover_ranking.index[0]
+    return turnover_leader
 
 # 6. Who has the highest plus minus?
 # 7. Who has the most free throws attempt?
