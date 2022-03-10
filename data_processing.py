@@ -95,7 +95,17 @@ def most_total_rebounds(basic_rebounds_stats):
     return most_total_rebounds_player
 
 # 4. Who has the most win shares?
+def get_win_shares_data(advanced_stats):
+    win_shares = advanced_stats["win_shares"]
+    return win_shares
+
+def most_win_shares(win_shares_stats):
+    win_shares_ranking = win_shares_stats.sort_values(ascending=False)
+    win_shares_leader = win_shares_ranking.index[0]
+    return win_shares_leader
+
 # 5. Who has the most turnovers?
+
 # 6. Who has the highest plus minus?
 # 7. Who has the most free throws attempt?
 # 8. Who played the most minutes?
