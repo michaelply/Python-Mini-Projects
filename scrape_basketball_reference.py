@@ -46,3 +46,18 @@ def get_nba_leaders_dict():
         all_leaders[category] = df
 
     return all_leaders
+
+def save_nba_leaders_df_as_csv(all_leaders_dict):
+    for key in all_leaders_dict.keys():
+        df = all_leaders_dict[key]
+        if key == "box plus/minus":
+            table_name = "box plus minus"
+        elif key == "offensive box plus/minus":
+            table_name = "offensive box plus minus"
+        elif key == "defensive box plus/minus":
+            table_name = "defensive box plus minus"
+        else:
+            table_name = key
+        df.to_csv(f"nba_leaders_data/{table_name}.csv", index = False)
+
+
