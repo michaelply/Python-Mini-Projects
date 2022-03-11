@@ -1,9 +1,10 @@
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import pandas as pd
+import constants as CONST
 
 # URL to scrape
-url = "https://www.basketball-reference.com/leagues/NBA_2022_leaders.html"
+url = CONST.NBA_LEADERS_URL
 
 # Collect HTML data
 html = urlopen(url)
@@ -58,4 +59,4 @@ def save_nba_leaders_df_as_csv(all_leaders_dict):
             table_name = "defensive box plus minus"
         else:
             table_name = key
-        df.to_csv(f"nba_leaders_data/{table_name}.csv", index = False)
+        df.to_csv(f"{CONST.NBA_LEADERS_CSV_DIR}{table_name}.csv", index = False)

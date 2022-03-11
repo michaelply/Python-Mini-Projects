@@ -1,4 +1,4 @@
-import constants as CONSTANTS
+import constants as CONST
 import pandas as pd
 
 def construct_quiz_dict(question_lists):
@@ -12,53 +12,53 @@ def construct_quiz_dict(question_lists):
     return quiz_dict
 
 def get_answer(question):
-    if question == CONSTANTS.QUESTIONS[0]:
+    if question == CONST.QUESTIONS[0]:
         # Most points per game
-        df = pd.read_csv("nba_leaders_data/points per game.csv")
+        df = pd.read_csv(f"{CONST.NBA_LEADERS_CSV_DIR}points per game.csv")
         answer = df.loc[0, "name"]
         return answer
-    elif question == CONSTANTS.QUESTIONS[1]:
+    elif question == CONST.QUESTIONS[1]:
         # Most assists per game
-        df = pd.read_csv("nba_leaders_data/assists per game.csv")
+        df = pd.read_csv(f"{CONST.NBA_LEADERS_CSV_DIR}assists per game.csv")
         answer = df.loc[0, "name"]
         return answer
-    elif question == CONSTANTS.QUESTIONS[2]:
+    elif question == CONST.QUESTIONS[2]:
         # Most rebounds per game
-        df = pd.read_csv("nba_leaders_data/rebounds per game.csv")
+        df = pd.read_csv(f"{CONST.NBA_LEADERS_CSV_DIR}rebounds per game.csv")
         answer = df.loc[0, "name"]
         return answer
-    elif question == CONSTANTS.QUESTIONS[3]:
+    elif question == CONST.QUESTIONS[3]:
         # Most win shares
-        df = pd.read_csv("nba_leaders_data/win shares.csv")
+        df = pd.read_csv(f"{CONST.NBA_LEADERS_CSV_DIR}win shares.csv")
         answer = df.loc[0, "name"]
         return answer
-    elif question == CONSTANTS.QUESTIONS[4]:
+    elif question == CONST.QUESTIONS[4]:
         # Most turnovers
-        df = pd.read_csv("nba_leaders_data/turnovers.csv")
+        df = pd.read_csv(f"{CONST.NBA_LEADERS_CSV_DIR}turnovers.csv")
         answer = df.loc[0, "name"]
         return answer
-    elif question == CONSTANTS.QUESTIONS[5]:
+    elif question == CONST.QUESTIONS[5]:
         # Highest plus minus
-        df = pd.read_csv("nba_leaders_data/box plus minus.csv")
+        df = pd.read_csv(f"{CONST.NBA_LEADERS_CSV_DIR}box plus minus.csv")
         answer = df.loc[0, "name"]
         return answer
-    elif question == CONSTANTS.QUESTIONS[6]:
+    elif question == CONST.QUESTIONS[6]:
         # Most free throw attempts
-        df = pd.read_csv("nba_leaders_data/free throw attempts.csv")
+        df = pd.read_csv(f"{CONST.NBA_LEADERS_CSV_DIR}free throw attempts.csv")
         answer = df.loc[0, "name"]
         return answer
-    elif question == CONSTANTS.QUESTIONS[7]:
+    elif question == CONST.QUESTIONS[7]:
         # Most minutes per game
-        df = pd.read_csv("nba_leaders_data/minutes played.csv")
+        df = pd.read_csv(f"{CONST.NBA_LEADERS_CSV_DIR}minutes played.csv")
         answer = df.loc[0, "name"]
         return answer
-    elif question == CONSTANTS.QUESTIONS[8]:
+    elif question == CONST.QUESTIONS[8]:
         # Highest true shooting percentage
-        df = pd.read_csv("nba_leaders_data/true shooting pct.csv")
+        df = pd.read_csv(f"{CONST.NBA_LEADERS_CSV_DIR}true shooting pct.csv")
         answer = df.loc[0, "name"]
         return answer
-    elif question == CONSTANTS.QUESTIONS[9]:
+    elif question == CONST.QUESTIONS[9]:
         # Most three pointers made
-        df = pd.read_csv("nba_leaders_data/3-pt field goals.csv")
+        df = pd.read_csv(f"{CONST.NBA_LEADERS_CSV_DIR}3-pt field goals.csv")
         answer = df.loc[0, "name"]
         return answer

@@ -1,3 +1,6 @@
+NBA_LEADERS_URL = "https://www.basketball-reference.com/leagues/NBA_2022_leaders.html"
+NBA_LEADERS_CSV_DIR = "nba_leaders_data/"
+
 # QUESTIONS
 NUM_OF_QUESTIONS_IN_QUIZ = 10
 
