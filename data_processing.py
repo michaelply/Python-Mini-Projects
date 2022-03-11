@@ -111,11 +111,26 @@ def get_turnover_data(basic_stats):
 
 def most_turnover_player(turnover_stats):
     turnover_ranking = turnover_stats.sort_values(ascending=False)
-    print(turnover_ranking)
     turnover_leader = turnover_ranking.index[0]
     return turnover_leader
 
 # 6. Who has the highest plus minus?
+advanced_stats.info()
+def get_plus_minus_data(advanced_stats):
+    plus_minus = advanced_stats["box_plus_minus"]
+    return plus_minus
+
+def highest_plus_minus(plus_minus_data):
+    plus_minus_ranking = plus_minus_data.sort_values(ascending=False)
+    print(plus_minus_ranking)
+    plus_minus_leader = plus_minus_ranking.index[0]
+    return plus_minus_leader
+
+data = get_plus_minus_data(advanced_stats)
+res = highest_plus_minus(data)
+print(res)
+
+
 # 7. Who has the most free throws attempt?
 # 8. Who played the most minutes?
 # 9. Who has the highest true shooting percentage?
