@@ -59,5 +59,3 @@ def save_nba_leaders_df_as_csv(all_leaders_dict):
         else:
             table_name = key
         df.to_csv(f"nba_leaders_data/{table_name}.csv", index = False)
-
-

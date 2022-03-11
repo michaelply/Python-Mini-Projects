@@ -33,4 +33,5 @@ def main():
     score_percentage = int(score/CONSTANTS.NUM_OF_QUESTIONS_IN_QUIZ*100)
     print(f"Your percentage is {score_percentage}%!")
 
-main()
+if __name__ == "__main__":
+    main()
