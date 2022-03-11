@@ -25,5 +25,34 @@ def get_answer(leaders_dict, question):
         answer = leaders_dict["assists per game"].loc[0, "name"]
         return answer
     elif question == CONSTANTS.QUESTIONS[2]:
+        # Most rebounds per game
         answer = leaders_dict["rebounds per game"].loc[0, "name"]
+        return answer
+    elif question == CONSTANTS.QUESTIONS[3]:
+        # Most win shares
+        answer = leaders_dict["win shares"].loc[0, "name"]
+        return answer
+    elif question == CONSTANTS.QUESTIONS[4]:
+        # Most turnovers
+        answer = leaders_dict["turnovers"].loc[0, "name"]
+        return answer
+    elif question == CONSTANTS.QUESTIONS[5]:
+        # Highest plus minus
+        answer = leaders_dict["box plus/minus"].loc[0, "name"]
+        return answer
+    elif question == CONSTANTS.QUESTIONS[6]:
+        # Most free throw attempts
+        answer = leaders_dict["free throw attempts"].loc[0, "name"]
+        return answer
+    elif question == CONSTANTS.QUESTIONS[7]:
+        # Most minutes per game
+        answer = leaders_dict["minutes per game"].loc[0, "name"]
+        return answer
+    elif question == CONSTANTS.QUESTIONS[8]:
+        # Highest true shooting percentage
+        answer = leaders_dict["true shooting pct"].loc[0, "name"]
+        return answer
+    elif question == CONSTANTS.QUESTIONS[9]:
+        # Most three pointers made
+        answer = leaders_dict["3-pt field goals"].loc[0, "name"]
         return answer
